@@ -1,7 +1,12 @@
+import java.util.Scanner;
+
 public class AreaOfCircle {
     public static void main(String[] args) {
-        double radius = 5.0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter radius: ");
+        double radius = scanner.nextDouble();
         double area = Math.PI * radius * radius;
-        System.out.println("Area of circle: " + area);
+        System.out.println("Area of the circle: " + area);
+        scanner.close();
     }
 }
