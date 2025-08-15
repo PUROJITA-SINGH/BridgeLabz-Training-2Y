@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class TriangleAreaInput {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter base in cm: ");
+        double base = scanner.nextDouble();
+        System.out.print("Enter height in cm: ");
+        double height = scanner.nextDouble();
+        double areaSqCm = 0.5 * base * height;
+        double areaSqIn = areaSqCm / (2.54 * 2.54);
+        System.out.println("The Area of the triangle in sq cm is " + areaSqCm + " and in sq in is " + areaSqIn);
+        scanner.close();
+    }
+}
